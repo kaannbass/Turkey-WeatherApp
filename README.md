@@ -37,6 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Proje
 
-![image](https://github.com/kaannbass/TurkeyMap-WeatherApp/assets/73648199/e54cd04d-61a5-456b-af2e-76a12a44cdc4)
-
-
+![image](https://github.com/kaannbass/TurkeyMap-WeatherApp/assets/73648199/dbcf4298-b40e-4fe8-901b-458768484b65)
