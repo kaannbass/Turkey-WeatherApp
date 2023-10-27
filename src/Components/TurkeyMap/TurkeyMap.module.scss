@@ -1,0 +1,63 @@
+.wrapper {
+  background: #fff;
+  padding: 2rem;
+}
+
+.map {
+  fill: #f1e4c2;
+
+  &.active g {
+    cursor: pointer;
+  }
+
+  path {
+    stroke: #333;
+    stroke-opacity: 0.5;
+  }
+
+  .city:hover path {
+    fill: darken(#f1e4c2, 20%);
+  }
+
+  :global(.active) {
+    path {
+      fill: #00d09c;
+    }
+
+    &:hover path {
+      fill: darken(#00d09c, 5%);
+    }
+  }
+
+  text {
+    fill: #333;
+    pointer-events: none;
+    font-size: 12px;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  display: none;
+
+  span {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    margin-right: 4px;
+
+    svg {
+      margin-left: 4px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
