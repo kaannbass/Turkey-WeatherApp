@@ -1,7 +1,24 @@
 .wrapper {
   background: #fff;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    height: 70vh;
+    padding: 3rem; 
+  }
+}
+
 
 .map {
   fill: #f1e4c2;
@@ -33,31 +50,5 @@
     fill: #333;
     pointer-events: none;
     font-size: 12px;
-  }
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.info {
-  display: none;
-
-  span {
-    display: flex;
-    align-items: center;
-    font-style: italic;
-    margin-right: 4px;
-
-    svg {
-      margin-left: 4px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
   }
 }
